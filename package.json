@@ -1,5 +1,5 @@
 {
-  "name": "node-postgres",
+  "name": "pern_api",
   "version": "1.0.0",
   "description": "NodeJS and Express can interact with PostgreSQL",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "node-posrgres"
+    "url": "https://github.com/kevinh21/pern_api.git"
   },
   "author": "Kevin Harger",
   "license": "ISC",
