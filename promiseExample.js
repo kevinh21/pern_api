@@ -2,9 +2,9 @@
 //   and
 // https://www.pluralsight.com/guides/executing-promises-in-a-react-component
 
-// Promise objects take a function with two values - resolve, reject and the
+// Promise objects take a function with two values - (resolve, reject), and the
 // execution is asynchronous, meaning it can return results out of order, but
-// guarantees a result.  Either resolve or reject and can have a timer.
+// guarantees a result.  Either resolve or reject.
 
 let num = new Promise((resolve, reject) => {
   let a = 1 + 1;
