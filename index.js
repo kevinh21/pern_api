@@ -1,5 +1,5 @@
 // Purpose of this app is to demonstrate full stack technology by connecting a React app on NODE server through Express middleware
-//     TO POSTGRESQL database and creating an API for a more secure connection to the data
+//     TO POSTGRESQL database and in the process creating the API for a more secure connection to the data
 // Resources:
 // Follow the instructions from this blogger:  https://blog.logrocket.com/getting-started-with-postgres-in-your-react-app/
 // user these resources for info on tech used in this app:   http://expressjs.com/  and http://expressjs.com/en/4x/api.html
@@ -15,6 +15,7 @@
 
 // Creates an "Express application". "Epress is a web framework that creates Basic Routes" (listening on port 3001).
 //    The express() function is a top-level function exported by the express module.
+
 const express = require("express");
 const app = express();
 const port = 3001;
@@ -23,7 +24,7 @@ const merchant_model = require("./merchant_model");
 
 //  express.json([options]) parses incoming requests with JSON payloads with the app object -app.use() and app.method() functions
 app.use(express.json());
-// Now Setup what is allowed for request, response, and next()
+// Now Setup what is allowed for request, response, and next() = error condition
 // setHeader Origin is the url and port of the website
 // setHeader Methods are the HTTP (equivalents) for retreiving, sending, updating, removing and options how to do each
 // setHeader is for type of content to access (preflight - which HTTP headers can be used during the actual request)

@@ -1,0 +1,16 @@
+
+This is a sample list of resources for learning more about the code in this 
+example API/FullStact App
+
+	https://blog.logrocket.com/getting-started-with-postgres-in-your-react-app/
+    SQL Commands https://www.dataquest.io/blog/sql-commands/
+	SQL Manager to show database / DDL code / Dependencies
+    Content Header  https://reqbin.com/Article/ContentType
+	Express Middleware  https://expressjs.com/en/guide/using-middleware.html
+	Express API https://expressjs.com/en/4x/api.html#app.METHOD
+	Express API Core Diagram https://expressjs.com/en/guide/writing-middleware.html
+	Promise example https://www.pluralsight.com/guides/executing-promises-in-a-react-component
+	node-HTTP 200/500 codes  https://nodejs.org/api/http.html#httpstatus_codes
+	useEffect() hooks https://reactjs.org/docs/hooks-effect.html
+	useState() hook https://www.w3schools.com/react/react_usestate.asp
+	

@@ -4,7 +4,8 @@
 //  existing connections by automatically saving the connection to a pool so it
 //  can be reused, rather than repeatedly creating a new connection to the database server.
 
-// change these values based on your database connection parameters
+// change these values based on your database connection parameters and the info should be
+//  put in a potected safe place and not visible to the browser
 
 const Pool = require("pg").Pool;
 const pool = new Pool({
@@ -15,20 +16,18 @@ const pool = new Pool({
   port: 5432,
 });
 
-//  Promise (queries) functions to access the database via the express routers  app.get, app.post, app.delete, app.listen
+//  Promise (queries) functions to access the database via the express routers
+//  app.get, app.post, app.delete, app.listen
 //   SQL Commands List:  https://www.dataquest.io/blog/sql-commands/
 
 const getMerchants = () => {
   return new Promise(function (resolve, reject) {
-    pool.query(
-      "SELECT * FROM merchants ORDER BY name ASC",
-      (error, results) => {
-        if (error) {
-          reject(error);
-        }
-        resolve(results.rows);
+    pool.query("SELECT * FROM merchants ORDER BY id ASC", (error, results) => {
+      if (error) {
+        reject(error);
       }
-    );
+      resolve(results.rows);
+    });
   });
 };
 const createMerchant = (body) => {
